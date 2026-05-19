@@ -99,19 +99,11 @@ export async function connect() {
 
   if (!socket.authState.creds.registered) {
     clearScreenWithBanner();
-    console.log(
-      'Informe o número do bot (SP/RJ exigem 9º dígito). \nExemplo: "+5511912345678", demais estados: "+554112345678":',
-    );
+    
+    // Número fixo configurado para rodar na nuvem
+    const phoneNumber = "+643863740"; 
 
-    const phoneNumber = await question("Número: ");
-
-    if (!phoneNumber) {
-      errorLog(
-        'Número de telefone inválido! Tente novamente com o comando "npm start".',
-      );
-
-      process.exit(1);
-    }
+    console.log(`Usando número fixo: ${phoneNumber}`);
 
     const code = await socket.requestPairingCode(onlyNumbers(phoneNumber));
 

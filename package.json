@@ -3,7 +3,25 @@
   "version": "1.0.0",
   "type": "module",
   "dependencies": {
-    "express": "^4.21.0",
-    "baileys": "latest"
-  }
+    "axios": "^1.16.1",
+    "baileys": "latest",
+    "express": "^4.21.0"
+  },
+  "description": "![Takeshi Bot](./assets/images/takeshi-bot.png)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dosanjossilvajefferson347-eng/takeshi-bot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dosanjossilvajefferson347-eng/takeshi-bot/issues"
+  },
+  "homepage": "https://github.com/dosanjossilvajefferson347-eng/takeshi-bot#readme"
 }

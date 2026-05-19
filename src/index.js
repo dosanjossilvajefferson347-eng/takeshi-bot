@@ -1,4 +1,6 @@
-require('../server.js');
-require('../server.js');
+import '../server.js';
+
+
+
 
 
